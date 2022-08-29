@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" name="author" content="rtl">
+    <title>fmw</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;;
+            background-color: #eee;
+        }
+        a {text-decoration-line: none}
+        .flex {display: flex}
+        .flex1 {flex:1}
+        .column {flex-direction: column}
+        .baise {background-color: #ffffff}
+        .juzhong {
+            justify-content:center;
+            align-items: center;
+            color: #999999;
+            font-size: 30px;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+        .daohang {
+            align-items: center;
+            margin: 10px;
+            border: outset;
+            box-shadow: royalblue;
+            font-family: 宋体;
+            font-size: 30px;
+
+
+        }
+    </style>
+</head>
+<body class="flex column">
+    <!--头部栏-->
+    <div class="baise flex baise juzhong" style="height:80px;background-image: url(../img/01.jpg)">
+        欢迎来到风魔大陆
+    </div>
+    <!--主内容-->
+    <div class="flex flex1">
+        <!--左边栏-->
+        <div style="flex: 1;margin: 8px;justify-content: space-around" class="flex column baise ">
+            <div class="flex column daohang " style="margin: 40px; background-color: red;" >
+                <a href="demo.html">血魔世界</a>
+            </div>
+            <div class="flex column daohang " style="margin: 40px; background-color: #666666">
+                <a href="demo.html">尸魔世界</a>
+            </div>
+            <div class="flex column daohang " style="margin: 40px; background-color:lightblue;">
+                <a href="demo.html">骨魔世界</a>
+            </div>
+            <div class="flex column daohang " style="margin: 40px; background-color: yellow;">
+                <a href="demo.html">器魔世界</a>
+            </div>
+        </div>
+        <!--内容栏-->
+        <div style="flex: 2;margin: 8px;background-image: url(../img/02.jpg)" class="flex baise "></div>
+        <!--右边栏-->
+        <div style="flex: 1;margin: 8px" class="flex baise ">
+            <audio src="../img/过-林俊杰-王嘉尔.mp3" autoplay loop controls></audio>
+        </div>
+    </div>
+</body>
+</html>
